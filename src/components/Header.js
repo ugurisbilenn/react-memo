@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Header({number,data}) {
+function Header({number,increment}) {
     console.log("Header Component re-rendered");
   return (
     <div>
@@ -8,7 +8,7 @@ function Header({number,data}) {
       Header - {number}
 
       <br/>
-      {JSON.stringify(data)}
+      <button onClick={increment}>Click</button>
     </div>
   )
 }
